@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "watch": "tsc -w",
-    "dev": "nodemon dist/server.js",
+    "dev": "nodemon server/server.js",
     "build": "yarn client:build && yarn server:build",
     "client:build": "esbuild src/index.tsx --bundle --outfile=dist/app.js",
     "server:build": "esbuild server/index.ts --bundle --outfile=dist/server.js --platform=node",

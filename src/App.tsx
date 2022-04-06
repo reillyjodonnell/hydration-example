@@ -1,5 +1,5 @@
 // App.tsx
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export const App: React.FC = () => {
   const [clicks, setClicks] = useState(0);
